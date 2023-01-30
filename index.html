@@ -8,28 +8,55 @@
     <link rel="stylesheet" href="./output/tailwind.css" />
     <!-- Font-awesome-link -->
     <script src="https://kit.fontawesome.com/82dace5b35.js" crossorigin="anonymous"></script>
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="./images/XMLID 1 (1).png" type="image/x-icon">
     <title>After Code</title>
   </head>
   <body class="">
     <!-- Header -->
-    <header class="md:mx-20 mt-6">
-      <nav class="flex justify-between">
+    <header class="md:mx-20 mt-6 ">
+      <nav class="flex justify-between fixed top-3 left-10 right-10">
         <div>
           <img src="./images/Group 2.png" alt="">
         </div>
         <ul class="flex gap-16">
-          <li class="hover:text-gray-500">Products</li>
-          <li class="hover:text-gray-500">Blog</li>
-          <li class="hover:text-gray-500">News</li>
+          <li class="hover:text-gray-500"><a href="#offers">Products</a></li>
+          <li class="hover:text-gray-500"><a href="#blog">Blog</a></li>
+          <li class="hover:text-gray-500"><a href="#trust">News</a></li>
         </ul>
         <div class="flex gap-5 items-center">
           <button class="bg-black rounded-3xl text-white px-5 py-2"><a href="#">Contact Us</a></button>
-          <i class="fa-solid fa-magnifying-glass hover:text-gray-500"></i>
+         <a href=""><i class="fa-solid fa-magnifying-glass hover:text-gray-500"></i></a> 
         </div>
       </nav>
     </header>
+    <main>
+    <section class="md:mx-20 h-screen pt-6">
+      <div class="flex place-content-center items-center gap-5 mt-10">
+        <!-- banner-vertical-line -->
+        <div class="grid place-items-center font-medium">
+          <h1 class="text-xl pb-4">01</h1>
+          <div class="bg-black h-96 w-1.5 ">
+          </div>
+          <h1 class="text-xl pt-4">04</h1>
+        </div>
+        <!-- banner-details -->
+        <div class="space-y-10 w-2/4 ml-5">
+          <h1 class="text-7xl font-bold">AfterCodecs</h1>
+          <p class="text-xl w-4/5">AfterCodecs plugins for Adobe CC, giving you the best and missing codecs for faster exports!</p>
+          <div class="space-x-16 pt-20">
+            <button class="text-2xl text-white bg-black px-8 py-3">Buy AfterCodecs</button>
+            <button class="text-2xl px-5 py-3 border-b-4 border-black">Download</button>
+          </div>
+        </div>
+        <!--banner-image  -->
+        <div class="w-2/4">
+          <img src="./images/Group 9.png" alt="" class="w-screen">
+        </div>
+      </div>
+    </section>
     <!-- Offers -->
-    <section class="md:mx-20 py-10">
+    <section class="md:mx-20 py-16" id="offers">
       <h1 class="text-black text-5xl text-center">Our special offers</h1>
       <div class="grid grid-cols-3  mt-20 place-items-center">
         <!-- Card-1 -->
@@ -77,7 +104,7 @@
       </div>
     </section>
     <!-- Trust section -->
-    <section class="trust bg-gray-100 py-10">
+    <section class="trust bg-gray-100 py-16" id="trust">
       <h1 class="text-black text-5xl text-center mt-2 pt-6">They trust us</h1>
       <div class="grid grid-rows-2 grid-cols-3 mt-16">
         <div class=" mb-8 "><img src="./images/Vector@2x.png" alt="" class="m-auto max-w-xs"></div>
@@ -88,9 +115,9 @@
         <div class=" mb-8 "><img src="./images/Vector@2x.png" alt="" class="m-auto max-w-xs"></div>
       </div>
       <h1 class="text-black text-2xl text-center mt-2  font-medium">and many more...</h1>
-    </section> -->
+    </section>
     <!-- Blog -->
-    <section class="blog md:mx-20 pt-12 pb-9">
+    <section class="blog md:mx-20 pt-12 pb-9" id="blog">
       <h1 class="text-black text-5xl font-bold">Blog</h1>
       <div class="grid grid-cols-2 grid-rows-3 gap-16 mt-16">
         <div class="flex shadow-md p-5">
@@ -169,5 +196,6 @@
         </div>
       </div>
     </section>
+  </main>
   </body>
 </html>
