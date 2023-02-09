@@ -13,53 +13,96 @@
     <title>After Code</title>
   </head>
   <body class="">
-    <!-- Header -->
-    <header class="md:mx-20 mt-6 ">
-      <nav class="flex justify-between fixed top-3 left-10 right-10">
-        <div>
-          <img src="./images/Group 2.png" alt="">
-        </div>
-        <ul class="flex gap-16">
-          <li class="hover:text-gray-500"><a href="#offers">Products</a></li>
-          <li class="hover:text-gray-500"><a href="#blog">Blog</a></li>
-          <li class="hover:text-gray-500"><a href="#trust">News</a></li>
+    <!-- Header-start -->
+    <header class="border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-sm md:py-5 md:px-8">
+      <!-- Logo image -->
+      <div class="flex items-center justify-between mb-4 md:mb-0 md:text-center">
+        <h1 class="leading-none text-2xl text-grey-darkest">
+          <a class="no-underline text-grey-darkest hover:text-black" href="#">
+            <img src="./images/Group 2.png" alt="">
+          </a>
+        </h1>
+    
+        <a class="text-black hover:text-orange md:hidden" href="#">
+          <i class="fa fa-2x fa-bars"></i>
+        </a>
+      </div>
+      <!-- END Logo image -->
+      
+      <!-- Global navigation -->
+      <nav class="md:items-center">
+        <ul class="list-reset md:flex md:items-center md:gap-20">
+          <li class="">
+            <a class="block no-underline py-2 text-black font-medium hover:text-gray-500 md:border-none md:p-0" href="#">
+              Products
+            </a>
+          </li>
+          <li class=" ">
+            <a class="border-t block no-underline py-2 text-black font-medium hover:text-gray-500 md:border-none md:p-0" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="">
+            <a class="border-t block no-underline py-2 text-black font-medium hover:text-gray-500 md:border-none md:p-0" href="#">
+              News
+            </a>
+          </li>
         </ul>
-        <div class="flex gap-5 items-center">
-          <button class="bg-black rounded-3xl text-white px-5 py-2"><a href="#">Contact Us</a></button>
-         <a href=""><i class="fa-solid fa-magnifying-glass hover:text-gray-500"></i></a> 
-        </div>
       </nav>
+      <!-- END Global navigation -->
+      <!-- Search field -->
+      <form class="md:mb-0">
+        <ul class="md:flex md:items-center">
+          <li class="sm:mt-3">
+            <button class="font-medium bg-black text-white sm:rounded-xl sm:py-1 sm:px-2 md:rounded-3xl md:py-2 md:w-28 md:mr-10">Contact</button>
+          </li>
+          <li class="sm:mt-3">
+            <a href=""><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+          </li>
+        </ul>
+      </form>
+      <!-- END Search field -->
     </header>
+    <!-- Header-end -->
     <main>
-    <section class="md:mx-20 h-screen pt-6">
-      <div class="flex place-content-center items-center gap-5 mt-10">
-        <!-- banner-vertical-line -->
-        <div class="grid place-items-center font-medium">
-          <h1 class="text-xl pb-4">01</h1>
-          <div class="bg-black h-96 w-1.5 ">
+      <section class="banner md:px-8 sm:px-14">
+        <div class="flex gap-14 mt-5 ">
+          <!-- Line  -->
+          <div class="w-3 text-center grid place-items-center md:w-1/10 space-y-4">
+            <h1 class="text-xl">01</h1>
+            <div class="bg-black h-96 w-1.5 ">
+            </div>
+            <h1 class="text-xl">04</h1>
           </div>
-          <h1 class="text-xl pt-4">04</h1>
-        </div>
-        <!-- banner-details -->
-        <div class="space-y-10 w-2/4 ml-5">
-          <h1 class="text-7xl font-bold">AfterCodecs</h1>
-          <p class="text-xl w-4/5">AfterCodecs plugins for Adobe CC, giving you the best and missing codecs for faster exports!</p>
-          <div class="space-x-16 pt-20">
-            <button class="text-2xl text-white bg-black px-8 py-3">Buy AfterCodecs</button>
-            <button class="text-2xl px-5 py-3 border-b-4 border-black">Download</button>
+          <!-- Line ends -->
+          <div class="lg:w-full">
+          <div class="md:flex md:h-96 ">
+            <div class="banner-description sm:space-y-5 md:w-2/4 lg:w-full">
+              <h1 class="text-7xl">
+                After <span class="font-semibold">Codecs</span> 
+              </h1>
+              <p class="sm:w-4/5 md:w-5/5 lg:pt-5 sm:text-xl font-medium">
+                AfterCodecs plugins for Adobe CC, giving you the best and missing codecs for faster exports!
+              </p>
+            </div>
+
+            <div class="banner-image sm:mt-7 md:w-2/4 lg:w-full">
+              <img src="./images/Group 9.png" alt="" class="lg:min-w-full">
+            </div>
           </div>
-        </div>
-        <!--banner-image  -->
-        <div class="w-2/4">
-          <img src="./images/Group 9.png" alt="" class="w-screen">
+            <div class="buttons space-x-5">
+              <button class="text-2xl text-white bg-black px-8 py-3">Buy AfterCodecs</button>
+              <button class="text-2xl px-5 py-3 border-b-4 border-black">Download</button>
+            </div>
         </div>
       </div>
-    </section>
+      </section>
+
     <!-- Offers -->
-    <section class="md:mx-20 py-16" id="offers">
+    <!-- <section class="md:mx-20 py-16" id="offers">
       <h1 class="text-black text-5xl text-center">Our special offers</h1>
       <div class="grid grid-cols-3  mt-20 place-items-center">
-        <!-- Card-1 -->
+
         <div class="shadow-lg px-5 pb-4 w-10/12 h-fit rounded-md">
           <img class="items-center mx-auto" src="./images/product-box-mockup (1).png" alt="">
           <h2 class="text-xl font-medium mt-8 info">AfterCodecs + BrawStudio <span class="text-gray-400">Pack</span></h2>
@@ -73,7 +116,7 @@
             <button class="border-2 border-black w-full p-2 font-medium">Apply now</button>
           </div>
         </div>
-        <!-- Card -2  -->
+
         <div class="shadow-lg px-5 pb-4 w-10/12 h-fit rounded-md">
           <img class="items-center mx-auto" src="./images/product-box-mockup.png" alt="">
           <h2 class="text-xl font-medium mt-8 info">AfterCodecs + BrawStudio <span class="text-gray-400">Pack</span></h2>
@@ -87,7 +130,7 @@
             <button class="border-2 border-black w-full p-2 font-medium">Apply now</button>
           </div>
         </div>
-        <!-- Card -3  -->
+
         <div class="shadow-lg px-5 pb-4 w-10/12 h-fit rounded-md">
           <img class="items-center mx-auto" src="./images/Free-Product-Box-Mockup-For-Packaging.png" alt="">
           <h2 class="text-xl font-medium mt-8 info">AfterCodecs + BrawStudio <span class="text-gray-400">Pack</span></h2>
@@ -102,9 +145,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Trust section -->
-    <section class="trust bg-gray-100 py-16" id="trust">
+    <!-- <section class="trust bg-gray-100 py-16" id="trust">
       <h1 class="text-black text-5xl text-center mt-2 pt-6">They trust us</h1>
       <div class="grid grid-rows-2 grid-cols-3 mt-16">
         <div class=" mb-8 "><img src="./images/Vector@2x.png" alt="" class="m-auto max-w-xs"></div>
@@ -115,9 +158,9 @@
         <div class=" mb-8 "><img src="./images/Vector@2x.png" alt="" class="m-auto max-w-xs"></div>
       </div>
       <h1 class="text-black text-2xl text-center mt-2  font-medium">and many more...</h1>
-    </section>
+    </section> -->
     <!-- Blog -->
-    <section class="blog md:mx-20 pt-12 pb-9" id="blog">
+    <!-- <section class="blog md:mx-20 pt-12 pb-9" id="blog">
       <h1 class="text-black text-5xl font-bold">Blog</h1>
       <div class="grid grid-cols-2 grid-rows-3 gap-16 mt-16">
         <div class="flex shadow-md p-5">
@@ -175,9 +218,9 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- Footer -->
-    <section class="bg-black">
+    <!-- <section class="bg-black">
       <div class=" grid grid-cols-3 h-52">
         <div class="flex mx-20 col-span-2 text-white items-center justify-between">
           <a href=""><img src="./images/logo.png" alt=""></a> 
@@ -195,7 +238,7 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   </body>
 </html>
